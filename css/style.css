@@ -64,10 +64,11 @@ ul {
 /* configurações título h2 de cada grupo */
 section > h2 {
     background-color: var(--cor1);
+    background-color: black;
     color: var(--cor2);
     margin-top: 25px;
-    margin-bottom: 15px;
-    border-radius: 7px;
+    border-radius: 7px 7px 0px 0px;
+    text-align: center;
 }
 
 /* configurações entre cada país dentro do grupo */
