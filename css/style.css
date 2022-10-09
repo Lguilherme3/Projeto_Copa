@@ -19,7 +19,7 @@
     --font-padrao: Arial, Helvetica, sans-serif;
 }
 
-
+/* configurações padrões da página */
 * {
     background-color: var(--cor0);
     font-family: var(--font-padrao);
@@ -27,6 +27,7 @@
     padding: 0px;
 }
 
+/* configurações título */
 h1 {
     font-family: 'ArabicBold', Arial;
     font-size: 80px;
@@ -34,15 +35,64 @@ h1 {
     text-align: center;
 }
 
+/* configurações Menu navegação */
+nav {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* configurações conteúdo principal */
 main {
     display: flex;
     justify-content: space-between;
 }
 
-#firstColumnGroup {
-    margin-left: 50px;
+/* configs da section */
+section {
+    width: 200px;
+    height: 188px;
+    background-color: var(--cor1);
+    border-radius: 7px;
 }
 
+/* config lista */
+ul {
+    list-style: none;
+}
+
+/* configurações título h2 de cada grupo */
+section > h2 {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+
+/* configurações entre cada país dentro do grupo */
+section , ul , li {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    margin: 5px;
+}
+
+/* coluna1 de grupos */
+#firstColumnGroup {
+    margin-left: 50px;
+    
+}
+
+/* coluna2 de grupos */
 #secondColumnGroup {
     margin-right: 50px;
+}
+
+/* espaço entre países */
+h2, ul {
+    padding: 5px;
+}
+
+img {
+    background-color: var(--cor1);
 }
