@@ -1,18 +1,36 @@
-/* fontes e cores */
-:root {
-    --cor0: #8B1638; 
-    --cor1: #FF004D;
-    --cor2: #FFFFFF;
+@charset "UTF-8";
 
-    
-    
+/* fontes e cores */
+@font-face {
+    font-family: 'ArabicBold';
+    src: url(/fontes/brownregular.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    /* cores */
+    --cor0: #8B1638; /*Cor principal*/
+    --cor1: #FF004D; /*Cor secundária*/
+    --cor2: #FFFFFF; /*Branco padrão*/
+    --cor3: #000000; /*Preto padrão*/
+
+    /* fontes */
+    --font-titulo: 'ArabicBold', cursive;
+    --font-padrao: Arial, Helvetica, sans-serif;
+
 }
 
 
 
 
 
-
 * {
-    background-color: #8B1638;
+    background-color: var(--cor0);
+   
+}
+
+h1 {
+    font-family: 'ArabicBold', Arial;
+    font-size: 100px;
+    color: var(--cor2);
 }
