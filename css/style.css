@@ -17,20 +17,32 @@
     /* fontes */
     --font-titulo: 'ArabicBold', cursive;
     --font-padrao: Arial, Helvetica, sans-serif;
-
 }
-
-
-
 
 
 * {
     background-color: var(--cor0);
-   
+    font-family: var(--font-padrao);
+    margin: 0px;
+    padding: 0px;
 }
 
 h1 {
     font-family: 'ArabicBold', Arial;
-    font-size: 100px;
+    font-size: 80px;
     color: var(--cor2);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#firstColumnGroup {
+    margin-left: 50px;
+}
+
+#secondColumnGroup {
+    margin-right: 50px;
 }
