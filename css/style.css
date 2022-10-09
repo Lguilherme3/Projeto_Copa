@@ -1,0 +1,18 @@
+/* fontes e cores */
+:root {
+    --cor0: #8B1638; 
+    --cor1: #FF004D;
+    --cor2: #FFFFFF;
+
+    
+    
+}
+
+
+
+
+
+
+* {
+    background-color: #8B1638;
+}
