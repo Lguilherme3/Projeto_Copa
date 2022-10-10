@@ -10,7 +10,7 @@
 
     <link rel="shortcut icon" href="imagens/qatarfavicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/javascript.js">
+    <link rel="stylesheet" href="js/script.js">
 </head>
 
 <body>
@@ -25,7 +25,11 @@
         <a href="https://www.qatarairways.com/app/fifa2022/pt" target="_blank">Site Oficial</a> 
     </nav>
 
-    <button type="submit" onclick="botao()">Resultado das oitavas</button>
+    <div id="menuDeResultados" >
+        <p onclick="botaoOitavas()">Resultado Oitavas</p>
+        <p onclick="botaoQuartas()">Resultado Quartas</p>
+        <p onclick="botaoSemi()">Resultado Semi Final</p>
+    </div>
 
     <main>
 
@@ -248,3 +252,6 @@
     </footer>
 </body>
 </html>
+
+<!-- js -->
+<script src="js/script.js"></script>

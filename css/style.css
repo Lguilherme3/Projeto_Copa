@@ -69,6 +69,20 @@ nav > a:hover {
     transition: transform .5s, border .5s;
 }
 
+/* botão para mostrar o resultados das oitavas de final */
+#menuDeResultados {
+    background-color: var(--cor2);
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#menuDeResultados> p:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
 /* configurações conteúdo principal */
 main {
    display: flex; 
