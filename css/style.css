@@ -45,7 +45,7 @@ h1 {
 
 /* configurações Menu navegação */
 nav {
-    margin: 20px;
+    margin: 3px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -114,21 +114,24 @@ section > ul > li {
 }
 
 /* coluna2 de grupos oitavas */
-#secondColumnGroup {
+div#secondColumnGroup {
     margin-top: 50px;
     text-align: center;
+    display: none; 
 }
 
 /* coluna3 de grupos quartas */
 #thirdColumnGroup {
     text-align: center;
     margin-top: 135px;
+    display: none;
 }
 
 /* coluna4 de grupos semifinal */
 #fourthColumnGroup {
     text-align: center;
     margin-top: 275px;
+    display: none;
 }
 
 #finalista {
@@ -140,18 +143,21 @@ section > ul > li {
 #fifthColumnGroup {
     text-align: center; 
     margin-top: 275px;
+    display: none;
 }
 
 /* coluna6 de grupos quartas */
 #sixthColumnGroup {
     text-align: center; 
     margin-top: 135px;
+    display: none;
 }
 
 /* coluna7 de grupos oitavas */
 #seventColumnGroup {
     margin-top: 50px;
     text-align: center; 
+    display: none;
 }
 
 /* coluna8 de grupos */
@@ -213,6 +219,18 @@ img {
 
 #imgLogo {
     background-color: var(--cor0);
+}
+
+aside {
+    
+    text-align: center;
+}
+
+aside > p{
+    font-family: var(--font-titulo);
+    font-size: 80px;
+    margin-top: -100px;
+    color: var(--cor2);
 }
 
 /* rodapé */
