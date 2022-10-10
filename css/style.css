@@ -21,15 +21,20 @@
 
 /* configurações padrões da página */
 * {
-    background-color: var(--cor0);
+    
     font-family: var(--font-padrao);
     margin: 0px;
     padding: 0px;
 }
 
+/* cor de fundo */
+body {
+    background-image: linear-gradient(to right, #8B1638 50%, #520d23);
+}
+
 /* configurações título */
 h1 {
-    font-family: 'ArabicBold', Arial;
+    font-family: var(--font-titulo);
     font-size: 80px;
     color: var(--cor2);
     text-align: center;
@@ -42,10 +47,27 @@ nav {
     justify-content: space-around;
 }
 
+/* links dos menus de navegação */
+nav > a {
+    background-color: #FF004D;
+    text-decoration: none;
+    text-align: center;
+    width: 125px;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--cor2);
+}
+
+/* links do menu de navegaçãos */
+nav > a:hover {
+    background-color: rgba(0, 0, 0, 0.377);
+    text-decoration: underline;
+    transition: 1s;
+}
+
 /* configurações conteúdo principal */
 main {
-    display: flex;
-    justify-content: space-between;
+    
 }
 
 /* configs da section */
@@ -64,8 +86,8 @@ ul {
 /* configurações título h2 de cada grupo */
 section > h2 {
     background-color: var(--cor1);
-    background-color: black;
-    color: var(--cor2);
+    background-color: var(--cor2);
+    color: var(--cor1);
     margin-top: 25px;
     border-radius: 7px 7px 0px 0px;
     text-align: center;
@@ -81,12 +103,45 @@ section , ul , li {
 /* coluna1 de grupos */
 #firstColumnGroup {
     margin-left: 50px;
+    display: inline-block;
     
 }
 
-/* coluna2 de grupos */
+/* coluna2 de grupos oitavas */
 #secondColumnGroup {
+    position: absolute;
+    text-align: center;
+    margin-left: 80px;
+}
+
+/* coluna3 de grupos oitavas*/
+#thirdColumnGroup {
+    position: absolute;
+    text-align: center;
+    margin-left: 1100px;
+}
+
+/* coluna4 de grupos */
+#fourthColumnGroup{
     margin-right: 50px;
+    float: right;
+    
+}
+
+/* controlar as sections menores dos grupos das oitavas */
+.sectionOitavas {
+    width: 200px;
+    height: 100px;
+    background-color: var(--cor1);
+    border-radius: 7px;
+
+    margin-top: 80px;
+}
+
+/* titulo dos grupos das oitavas */
+#secondColumnGroup, #thirdColumnGroup > h2 {
+    font-family: var(--font-padrao);
+    color: white;
 }
 
 /* espaço entre países */
@@ -94,6 +149,33 @@ h2, ul {
     padding: 5px;
 }
 
+/* imagens das seleções */
 img {
     background-color: var(--cor1);
+}
+
+/* rodapé */
+footer {
+    text-align: center;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    font-family: var(--font-titulo);
+    padding: 5px;
+    margin-top: 25px;
+    height: 20px;
+}
+
+/* acessando o link do footer */
+footer > p > a {
+    text-decoration: none;
+}
+
+/* mudando de cor o link do footer */
+footer > p > a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
+div {
+    display: inline-block;
 }
