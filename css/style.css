@@ -32,7 +32,7 @@
 
 /* cor de fundo */
 body {
-    background-image: linear-gradient(to right, #8B1638 50%, #520d23);
+    background-image: linear-gradient(to right, #8B1638 60%, #520d23);
 }
 
 /* configurações título */
@@ -47,7 +47,7 @@ h1 {
 nav {
     margin: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 /* links dos menus de navegação */
@@ -63,9 +63,10 @@ nav > a {
 
 /* links do menu de navegaçãos */
 nav > a:hover {
-    background-color: rgba(0, 0, 0, 0.377);
-    text-decoration: underline;
-    transition: 1s;
+    border: 2px solid rgba(255, 255, 255, 0.473);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
+    transition: transform .5s, border .5s;
 }
 
 /* configurações conteúdo principal */
@@ -77,7 +78,7 @@ main {
 
 /* configs da section */
 section {
-    width: 169px;
+    width: 140px;
     height: 168px;
     font-size: 14px;
     background-color: var(--cor1);
@@ -109,8 +110,7 @@ section > ul > li {
 
 /* coluna1 de grupos */
 #firstColumnGroup {
-    margin-left: 20px;
-    display: inline-block;
+    margin-left: 5px;
 }
 
 /* coluna2 de grupos oitavas */
@@ -129,6 +129,11 @@ section > ul > li {
 #fourthColumnGroup {
     text-align: center;
     margin-top: 275px;
+}
+
+#finalista {
+    margin-top: 235px;
+    text-align: center;
 }
 
 /* coluna5 de grupos semifinal */
@@ -151,13 +156,11 @@ section > ul > li {
 
 /* coluna8 de grupos */
 #octaveColumnGroup{
-    margin-right: 20px;
-    float: right;
-    
+    margin-right: 5px;    
 }
 
 .sectionQuartas {
-    width: 169px;
+    width: 130px;
     height: 108px;
     background-color: var(--cor1);
     border-radius: 7px;
@@ -167,7 +170,7 @@ section > ul > li {
 
 /* controlar as sections menores dos grupos das oitavas */
 .sectionOitavas {
-    width: 169px;
+    width: 130px;
     height: 108px;
     background-color: var(--cor1);
     border-radius: 7px;
@@ -176,7 +179,7 @@ section > ul > li {
 }
 
 .sectionSemifinal {
-    width: 169px;
+    width: 130px;
     height: 108px;
     background-color: var(--cor1);
     border-radius: 7px;
@@ -184,6 +187,14 @@ section > ul > li {
     margin-top: 40px;
 }
 
+.sectionFinal {
+    width: 130px;
+    height: 108px;
+    background-color: var(--cor1);
+    border-radius: 7px;
+
+    margin-top: 40px;
+}
 /* titulo dos grupos das oitavas */
 div > h2 {
     font-family: var(--font-padrao);
@@ -198,6 +209,10 @@ h2, ul {
 /* imagens das seleções */
 img {
     background-color: var(--cor1);
+}
+
+#imgLogo {
+    background-color: var(--cor0);
 }
 
 /* rodapé */
@@ -222,9 +237,6 @@ footer > p > a:hover {
     text-decoration: underline;
 }
 
-div {
-    display: inline-block;
-}
 
 
 /* @media screen and (min-width: 1200px) and (max-width: 1620px) {
