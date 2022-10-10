@@ -20,7 +20,10 @@
 }
 
 /* configurações padrões da página */
+/* @media screen and (min-width: 1200px) and (max-width: 1920px) { */
 * {
+    max-width: 100%;
+    max-height: 100%;
     
     font-family: var(--font-padrao);
     margin: 0px;
@@ -67,15 +70,20 @@ nav > a:hover {
 
 /* configurações conteúdo principal */
 main {
-    
+   display: flex; 
+   display: flex;
+   justify-content: space-between;
 }
 
 /* configs da section */
 section {
-    width: 200px;
-    height: 188px;
+    width: 169px;
+    height: 168px;
+    font-size: 14px;
     background-color: var(--cor1);
     border-radius: 7px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.205);
+    margin: 24px 0px;
 }
 
 /* config lista */
@@ -88,13 +96,12 @@ section > h2 {
     background-color: var(--cor1);
     background-color: var(--cor2);
     color: var(--cor1);
-    margin-top: 25px;
     border-radius: 7px 7px 0px 0px;
     text-align: center;
 }
 
 /* configurações entre cada país dentro do grupo */
-section , ul , li {
+section > ul > li {
     background-color: var(--cor1);
     color: var(--cor2);
     margin: 5px;
@@ -102,44 +109,83 @@ section , ul , li {
 
 /* coluna1 de grupos */
 #firstColumnGroup {
-    margin-left: 50px;
+    margin-left: 20px;
     display: inline-block;
-    
 }
 
 /* coluna2 de grupos oitavas */
 #secondColumnGroup {
-    position: absolute;
+    margin-top: 50px;
     text-align: center;
-    margin-left: 80px;
 }
 
-/* coluna3 de grupos oitavas*/
+/* coluna3 de grupos quartas */
 #thirdColumnGroup {
-    position: absolute;
     text-align: center;
-    margin-left: 1100px;
+    margin-top: 135px;
 }
 
-/* coluna4 de grupos */
-#fourthColumnGroup{
-    margin-right: 50px;
+/* coluna4 de grupos semifinal */
+#fourthColumnGroup {
+    text-align: center;
+    margin-top: 275px;
+}
+
+/* coluna5 de grupos semifinal */
+#fifthColumnGroup {
+    text-align: center; 
+    margin-top: 275px;
+}
+
+/* coluna6 de grupos quartas */
+#sixthColumnGroup {
+    text-align: center; 
+    margin-top: 135px;
+}
+
+/* coluna7 de grupos oitavas */
+#seventColumnGroup {
+    margin-top: 50px;
+    text-align: center; 
+}
+
+/* coluna8 de grupos */
+#octaveColumnGroup{
+    margin-right: 20px;
     float: right;
     
 }
 
-/* controlar as sections menores dos grupos das oitavas */
-.sectionOitavas {
-    width: 200px;
-    height: 100px;
+.sectionQuartas {
+    width: 169px;
+    height: 108px;
     background-color: var(--cor1);
     border-radius: 7px;
 
     margin-top: 80px;
 }
 
+/* controlar as sections menores dos grupos das oitavas */
+.sectionOitavas {
+    width: 169px;
+    height: 108px;
+    background-color: var(--cor1);
+    border-radius: 7px;
+
+    margin-top: 40px;
+}
+
+.sectionSemifinal {
+    width: 169px;
+    height: 108px;
+    background-color: var(--cor1);
+    border-radius: 7px;
+
+    margin-top: 40px;
+}
+
 /* titulo dos grupos das oitavas */
-#secondColumnGroup, #thirdColumnGroup > h2 {
+div > h2 {
     font-family: var(--font-padrao);
     color: white;
 }
@@ -179,3 +225,25 @@ footer > p > a:hover {
 div {
     display: inline-block;
 }
+
+
+/* @media screen and (min-width: 1200px) and (max-width: 1620px) {
+
+#thirdColumnGroup {
+    margin-left: 40%;
+}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #thirdColumnGroup {
+        margin-left: 90%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #thirdColumnGroup {
+        margin-left: 40%;
+    }
+} */
