@@ -29,7 +29,7 @@
     }
 
     main {
-        
+        width: 768px;
         display: none;
     }
 
@@ -44,27 +44,56 @@
         text-align: center;
     }
 
-    nav {
-        margin: 3px;
-        display: flex;
-        justify-content: space-evenly;
+    /* menu hamburguinhos */
+    i#burguer {
+        background-color: white;
+        color: var(--cor3);
+        display: block;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
     }
 
-    nav > a {
-        background-color: #FF004D;
+    menu {
+        margin: 3px;
+        display: ;
+        justify-content: space-evenly; 
+        display: inline-block;
+    }
+
+    menu > ul {
+        list-style-type: none;
+    }
+
+    menu > ul > li {
+        display: list-item;
+    }
+
+    menu > ul > li > a {
+        /* background-color: #FF004D;
         text-decoration: none;
         text-align: center;
         padding: 5px;
         border-radius: 10px;
-        color: var(--cor2);
+        color: var(--cor2); */
+
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #FF004D;
+        color: white;
+        border-top: 2px solid rgba(255, 255, 255, 0.493);
     }
 
-    nav > a:hover {
+    menu > ul > li > a:hover {
         border: 2px solid rgba(255, 255, 255, 0.473);
         transform: translate(-3px, -3px);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
         transition: transform .5s, border .5s;
     }
+
+    
     
     #menuDeResultados {
         display: none;
@@ -137,15 +166,31 @@ h1 {
     text-align: center;
 }
 
+/* menu hamburguinhos */
+i#burguer {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+menu {
+    display: block;
+}
+
 /* configurações Menu navegação */
-nav {
+menu > ul {
+    
     margin: 3px;
     display: flex;
     justify-content: space-evenly;
+    list-style-type: none;
 }
 
 /* links dos menus de navegação */
-nav > a {
+menu > ul > li > a {
     background-color: #FF004D;
     text-decoration: none;
     text-align: center;
@@ -153,15 +198,18 @@ nav > a {
     padding: 5px;
     border-radius: 10px;
     color: var(--cor2);
+    display: block;
 }
 
 /* links do menu de navegaçãos */
-nav > a:hover {
+menu > ul > li > a:hover {
     border: 2px solid rgba(255, 255, 255, 0.473);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);
     transition: transform .5s, border .5s;
 }
+
+
 
 /* botão para mostrar o resultados das oitavas de final */
 #menuDeResultados {
@@ -177,6 +225,7 @@ nav > a:hover {
     color: var(--cor1);
     text-decoration: underline;
 }
+
 
 /* configurações conteúdo principal */
 main {

@@ -8,23 +8,30 @@
 
     <title>QATAR FIFA WORLD CUP</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="shortcut icon" href="imagens/qatarfavicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/script.js">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
 
     <header>
         <h1>Qatar 2022</h1>
     </header>
     <!-- menu de navegação -->
-    <nav>
-        <a href="index.html">Grupos e Chaves</a>
-        <a href="#">Qatar</a>
-        <a href="https://www.qatarairways.com/app/fifa2022/pt" target="_blank">Site Oficial</a> 
-    </nav>
+    
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <menu id="itens">
+        <ul>
+            <li><a href="index.html">Grupos e Chaves</a></li>
+            <li><a href="#">Qatar</a></li>
+            <li><a href="https://www.qatarairways.com/app/fifa2022/pt" target="_blank">Site Oficial</a></li>
+        </ul>
+    </menu>
 
+    
     <div id="menuDeResultados" >
         <p onclick="botaoOitavas()">Resultado Oitavas</p>
         <p onclick="botaoQuartas()">Resultado Quartas</p>

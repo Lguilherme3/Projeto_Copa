@@ -57,3 +57,23 @@ function botaoSemi() {
         fifthColumnGroup.style.display = 'block';
     }
 }
+
+
+
+// menu hamburguinho para telas menores
+
+function mudouTamanho() {
+    if (window.innerWidth <= 1299) {
+        itens.style.display = 'none'
+    } else {
+        itens.style.display = 'block'
+    }
+}
+
+function clickMenu() {
+    if (itens.style.display == 'none') {
+        itens.style.display = 'block'
+    } else {
+        itens.style.display = 'none'
+    }
+}
