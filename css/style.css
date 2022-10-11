@@ -108,7 +108,7 @@
     }
     
     aside > p {
-        font-family: var(--font-titulo);
+        font-family: var(--font-padrao);
         font-size: 16px;
         margin-top: 10px;
         padding: 5px;
@@ -124,10 +124,10 @@
     text-align: center;
     background-color: var(--cor2);
     color: var(--cor3);
-    font-family: var(--font-titulo);
+    font-family: var(--font-padrao);
     padding: 5px;
     margin-top: 25px;
-    height: 30px;
+    height: 40px;
 }
 
     /* acessando o link do footer */
