@@ -22,16 +22,16 @@
 @media screen and (max-width: 1299px) {
 
     * {
-        
         font-family: var(--font-padrao);
         margin: 0px;
         padding: 0px;
+        max-height: 100vh;
     }
 
     main {
         width: 768px;
-        display: none;
-        height: 100%;
+        display: none; 
+        
     }
 
     body {
@@ -121,6 +121,11 @@
         display: block;
     }
 
+    #logoNoMobile > img {
+        display: block;
+        margin: 90px auto 260px;
+    }
+
     /* rodapé */
     footer {
     text-align: center;
@@ -128,7 +133,7 @@
     color: var(--cor3);
     font-family: var(--font-padrao);
     padding: 5px;
-    margin-top: 50%;
+    
     height: 40px;
 
     
@@ -389,14 +394,20 @@ aside {
     text-align: center;
 }
 
-aside > p{
+aside > p {
     font-family: var(--font-titulo);
     font-size: 80px;
     margin-top: -100px;
     color: var(--cor2);
 }
 
+/* informação do conteúdo mobile */
 aside > #noticeMobileContent {
+    display: none;
+}
+
+/* logo da copa no mobile */
+#logoNoMobile {
     display: none;
 }
 
