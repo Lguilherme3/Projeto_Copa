@@ -25,13 +25,12 @@
         font-family: var(--font-padrao);
         margin: 0px;
         padding: 0px;
-        max-height: 100vh;
     }
 
     main {
         width: 768px;
         display: none; 
-        
+        width: 100vw;
     }
 
     body {
@@ -40,7 +39,7 @@
     }
 
     h1 {
-        font-family: var(--font-titulo);
+        font-family: var(--font-padrao);
         font-size: 60px;
         color: var(--cor2);
         text-align: center;
@@ -106,7 +105,7 @@
         background-color: var(--cor2);
         max-width: 40%;
         padding: 2px;
-        margin: 60px auto;
+        margin: 30px auto;
     }
     
     aside > p {
@@ -115,6 +114,7 @@
         margin-top: 10px;
         padding: 5px;
         color: var(--cor3);
+        text-align: ;
     }
 
     aside > #noticeMobileContent {
@@ -123,7 +123,7 @@
 
     #logoNoMobile > img {
         display: block;
-        margin: 90px auto 260px;
+        margin: 1px auto 60px;
     }
 
     /* rodapé */
@@ -133,10 +133,12 @@
     color: var(--cor3);
     font-family: var(--font-padrao);
     padding: 5px;
-    
     height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 98%;
 
-    
 }
 
     /* acessando o link do footer */
