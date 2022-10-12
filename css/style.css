@@ -31,10 +31,12 @@
     main {
         width: 768px;
         display: none;
+        height: 100%;
     }
 
     body {
         background-image: linear-gradient(to right, #8B1638 60%, #520d23);
+        
     }
 
     h1 {
@@ -126,8 +128,10 @@
     color: var(--cor3);
     font-family: var(--font-padrao);
     padding: 5px;
-    margin-top: 25px;
+    margin-top: 50%;
     height: 40px;
+
+    
 }
 
     /* acessando o link do footer */
