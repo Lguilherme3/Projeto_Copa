@@ -334,11 +334,12 @@ div#secondColumnGroup {
 
 /* controlar as sections menores dos grupos das oitavas */
 .sectionOitavas {
-    width: 130px;
+    text-align: left;
+    width: 133px;
     height: 108px;
     background-color: var(--cor1);
     border-radius: 7px;
-
+    font-size: 12px;
     margin-top: 40px;
 }
 
