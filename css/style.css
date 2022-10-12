@@ -152,6 +152,7 @@
         text-decoration: underline;
     }
 
+
     /* tamanho do mapa na página qatar para mobile*/
     iframe {
         width: 80%;
@@ -166,7 +167,7 @@
 
     #sobreQatar > #conteúdoQatar {
         width: 200px;
-        margin-left: 30px;
+        margin-left: 60px;
     } 
     
     ul > li {
@@ -463,6 +464,11 @@ footer > p > a:hover {
     text-decoration: underline;
 }
 
+/* cor do texto Págin Qatar */
+#sobreQatar , p {
+    margin-left: 7px;
+    color: white;
+}
 }
 
 
