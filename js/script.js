@@ -28,21 +28,7 @@ let selectionsGroup1G = ['<img src="imagens/brasil.png" alt="Emblema redondo BRA
 let selectionsGroup1H = ['<img src="imagens/portugal.png" alt="Emblema redondo PORTUGAL"> PORTUGAL','<img src="imagens/gana.png" alt="Emblema redondo GANA"> GANA','<img src="imagens/uruguay.png" alt="Emblema redondo URUGUAI"> URUGUAI','<img src="imagens/coreiadosul.png" alt="Emblema redondo COREIA DO SUL"> COREIA DO SUL']
 //----------------------------------------------------------------------------/
 
-let contadorGols = [1, 2, 3, 4]
-contadorGols[random(0, contadorGols.length)]
-let contadorGols2 = [1, 2, 3, 4]
-contadorGols[random(0, contadorGols.length)]
-
-// qualquer coisa apagar
-resultado1 = contadorGols[random(0, contadorGols.length)]
-resultado2 = contadorGols[random(0, contadorGols.length)]
-
-// if(resultado1 == resultado2) {
-//     resultado1++
-// }
-
-
-// qualquer coisa apagar
+var contadorGols = [1, 2, 3, 4]
 
 // botão para mostrar o resultados das oitavas de final
 function botaoOitavas() {
@@ -59,14 +45,23 @@ function botaoOitavas() {
     }
 
     // Randomização primeiro grupo oitavas
-    resultadoOitavas1.innerHTML = selectionsGroup1A[random(0, selectionsGroup1A.length)] + ' ' + resultado1 + '</br>' + '</br>' + selectionsGroup1B[random(0, selectionsGroup1B.length)] + ' ' + resultado2
+    resultadoOitavas1.innerHTML = selectionsGroup1A[random(0, selectionsGroup1A.length)] + ' ' + '(' + contadorGols[random(0, contadorGols.length)] + ')' + '</br>' + '</br>' + selectionsGroup1B[random(0, selectionsGroup1B.length)] + ' ' +  '(' + contadorGols[random(0, contadorGols.length)] + ')' 
     // randomização segundo grupo oitvas
-    resultadoOitavas2.innerHTML = selectionsGroup1C[random(0, selectionsGroup1C.length)] + ' ' + contadorGols[random(0, contadorGols.length)] + '</br>' + '</br>' + selectionsGroup1D[random(0, selectionsGroup1D.length)] + ' ' + contadorGols[random(0, contadorGols.length)]
+    resultadoOitavas2.innerHTML = selectionsGroup1C[random(0, selectionsGroup1C.length)] + ' ' + '(' + contadorGols[random(0, contadorGols.length)] + ')'  + '</br>' + '</br>' + selectionsGroup1D[random(0, selectionsGroup1D.length)] + ' ' +  '(' + contadorGols[random(0, contadorGols.length)] + ')' 
     // randomização terceiro grupo oitvas
-    resultadoOitavas3.innerHTML = selectionsGroup1E[random(0, selectionsGroup1E.length)] + ' ' + contadorGols[random(0, contadorGols.length)] + '</br>' + '</br>' + selectionsGroup1F[random(0, selectionsGroup1F.length)] + ' ' + contadorGols[random(0, contadorGols.length)]
+    resultadoOitavas3.innerHTML = selectionsGroup1E[random(0, selectionsGroup1E.length)] + ' ' + '(' + contadorGols[random(0, contadorGols.length)] + ')'  + '</br>' + '</br>' + selectionsGroup1F[random(0, selectionsGroup1F.length)] + ' ' +  '(' + contadorGols[random(0, contadorGols.length)] + ')' 
     // randomização quarto grupo oitvas
-    resultadoOitavas4.innerHTML = selectionsGroup1G[random(0, selectionsGroup1G.length)] + ' ' + contadorGols[random(0, contadorGols.length)] + '</br>' + '</br>' + selectionsGroup1H[random(0, selectionsGroup1H.length)] + ' ' + contadorGols[random(0, contadorGols.length)]
-    
+    resultadoOitavas4.innerHTML = selectionsGroup1G[random(0, selectionsGroup1G.length)] + ' ' + '(' + contadorGols[random(0, contadorGols.length)] + ')'  + '</br>' + '</br>' + selectionsGroup1H[random(0, selectionsGroup1H.length)] + ' ' +  '(' + contadorGols[random(0, contadorGols.length)] + ')' 
+
+
+    // Randomização quinto grupo oitavas
+    resultadoOitavas5.innerHTML = selectionsGroup1A[random(0, selectionsGroup1A.length)] + ' ' + '(' + contadorGols[random(0, contadorGols.length)] + ')'  + '</br>' + '</br>' + selectionsGroup1B[random(0, selectionsGroup1B.length)] + ' ' +  '(' + contadorGols[random(0, contadorGols.length)] + ')' 
+    // randomização sexto grupo oitvas
+    resultadoOitavas6.innerHTML = selectionsGroup1C[random(0, selectionsGroup1C.length)] + ' ' + '(' + contadorGols[random(0, contadorGols.length)] + ')'  + '</br>' + '</br>' + selectionsGroup1D[random(0, selectionsGroup1D.length)] + ' ' +  '(' + contadorGols[random(0, contadorGols.length)] + ')' 
+    // randomização setimo grupo oitvas
+    resultadoOitavas7.innerHTML = selectionsGroup1E[random(0, selectionsGroup1E.length)] + ' ' + '(' + contadorGols[random(0, contadorGols.length)] + ')'  + '</br>' + '</br>' + selectionsGroup1F[random(0, selectionsGroup1F.length)] + ' ' +  '(' + contadorGols[random(0, contadorGols.length)] + ')' 
+    // randomização oitavo grupo oitvas
+    resultadoOitavas8.innerHTML = selectionsGroup1G[random(0, selectionsGroup1G.length)] + ' ' + '(' + contadorGols[random(0, contadorGols.length)] + ')'  + '</br>' + '</br>' + selectionsGroup1H[random(0, selectionsGroup1H.length)] + ' ' +  '(' + contadorGols[random(0, contadorGols.length)] + ')'    
 }
 
 //----------------------------------------------------------------------------/
