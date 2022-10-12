@@ -5,8 +5,12 @@
         h2 {
             font-size: 30px;
             text-align: center;
+            color: white;
         }
 
+        p, ul {
+            color: white;
+        }
         #sobreQatar {
             margin: auto;
             width: 500px;
