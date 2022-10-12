@@ -151,7 +151,35 @@
         color: var(--cor1);
         text-decoration: underline;
     }
+
+    /* tamanho do mapa na página qatar para mobile*/
+    iframe {
+        width: 80%;
+        
     }
+
+    /* para aparecer o conteudo do main dá pagina qatar */
+    #sobreQatar {
+        display: block;
+        color: white;
+    }
+
+    #sobreQatar > #conteúdoQatar {
+        width: 200px;
+        margin-left: 30px;
+    } 
+    
+    ul > li {
+        list-style-type: none
+    }
+
+    #footerPágQatar {
+        display: none;
+    }
+
+    }
+
+    
 
 /* configurações padrões da página */
 @media screen and (min-width: 1300px){ 

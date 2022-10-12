@@ -9,20 +9,54 @@
 
     <link rel="shortcut icon" href="imagens/qatarfavicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleQatar.css">
     <link rel="stylesheet" href="js/script.js">
 
     <title>QATAR FIFA WORLD CUP</title>
+
 </head>
-<body>
+<body onresize="mudouTamanho()">
+
     <header>
-
+        <h1>Qatar 2022</h1>
     </header>
-    <main>
+    <!-- menu de navegação -->
 
-    </main>
-    <footer>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <menu id="itens">
+        <ul>
+            <li><a href="index.html">Grupos e Chaves</a></li>
+            <li><a href="#">Qatar</a></li>
+            <li><a href="https://www.qatarairways.com/app/fifa2022/pt" target="_blank">Site Oficial</a></li>
+        </ul>
+    </menu>
+    <main id="sobreQatar"> 
+        <div id="conteúdoQatar">
+            <h2>Um pouco mais sobre Catar(Qatar)</h2>
+           <p> O Catar é um país peninsular árabe cuja paisagem abrange um deserto árido e um longo litoral no Golfo Pérsico (Árabe) repleto de praias e dunas. Também na costa, fica a capital Doha, conhecida pelos arranha-céus futuristas e pela arquitetura ultramoderna inspirada no antigo design islâmico, com exemplos como o Museu de Arte Islâmica, feito de calcário e localizado no calçadão à beira-mar da cidade, chamado de Corniche.
+           </p>
+
+           <ul>
+                <li>Capital: <strong>Doha</strong> </li>
+                <li>Continente: <strong>Ásia</strong></li>
+                <li>Moeda: <strong>Rial catarense</strong></li>
+                <li>População: <strong>2,881 milhões (2020)</strong></li>
+                <li>Idioma oficial: <strong>Árabe</strong></li>
+           </ul>
+        </div>
         
+        
+    </main>
+    <div id="mapa">
+            <h2>Localização no globo</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1097946.1087642328!2d51.255727027276365!3d25.321660490788496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x1cfa88cf812b4032!2sCatar!5e0!3m2!1spt-PT!2sbr!4v1665596958872!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    <footer id="footerPágQatar">
+         <p>Desenvolvido por <a href="https://github.com/Lguilherme3" target="_blank">Luiz Guilherme</a>, este conteúdo foi criado para fins colaborativos/acadêmico.</p> <a href="index.html">Volte ao inicio</a>
     </footer>
     
 </body>
 </html>
+
+<!-- js -->
+<script src="js/script.js"></script>
