@@ -57,9 +57,9 @@
 
     menu {
         margin: 3px;
-        display: ;
+        display: none;
         justify-content: space-evenly; 
-        display: inline-block;
+ 
     }
 
     menu > ul {
