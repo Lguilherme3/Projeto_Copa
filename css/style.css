@@ -155,12 +155,13 @@
         text-decoration: underline;
     }
 
-
+    /* configurações página qatar mobile */
     /* tamanho do mapa na página qatar para mobile*/
     iframe {
         width: 80%;
         
     }
+
 
     /* para aparecer o conteudo do main dá pagina qatar */
     #sobreQatar {
@@ -169,12 +170,21 @@
     }
 
     #sobreQatar > #conteúdoQatar {
-        width: 200px;
-        margin-left: 60px;
+        background-color: #FF004D;
+        padding: 10px;
+        border-radius: 20px;
+        margin: auto;
+        width: 300px;
+        
     } 
+
+    #sobreQatar > h2 {
+        font-size: 10px;
+        padding: 20px;
+    }
     
-    ul > li {
-        list-style-type: none
+    #sobreQatar {
+        text-align: center;
     }
 
     #footerPágQatar {
