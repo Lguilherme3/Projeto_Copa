@@ -131,16 +131,16 @@
 
     /* rodapé */
     footer {
-    text-align: center;
-    background-color: var(--cor2);
-    color: var(--cor3);
-    font-family: var(--font-padrao);
-    padding: 5px;
-    height: 40px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 98%;
+        text-align: center;
+        background-color: var(--cor2);
+        color: var(--cor3);
+        font-family: var(--font-padrao);
+        padding: 5px;
+        height: 40px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
 
 }
 

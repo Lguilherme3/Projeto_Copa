@@ -19,6 +19,15 @@
             padding: 10px;
         }
 
+        #sobreQatar > #conteúdoQatar {
+            background-color: #FF004D;
+            padding: 10px;
+            border-radius: 20px;
+            margin: auto;
+            width: 300px;
+            
+        } 
+
         main > #conteúdoQatar > h2 {
             color: white;
             margin-bottom: 30px;
@@ -50,6 +59,7 @@
         }
 
         footer > p {
+            width: 100%;
             color: black;
         }
 
